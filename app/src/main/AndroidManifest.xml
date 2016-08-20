@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.sga.sga">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="SGRH"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="locked">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CadastroActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".CalendarioActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".CadEnderecoActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".EditarCadastroActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".ListEnderecoActivity"
+            android:screenOrientation="locked" />
+        <activity android:name=".UpdateDeleteActivity"></activity>
+    </application>
+
+</manifest>

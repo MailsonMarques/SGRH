@@ -36,7 +36,7 @@ public class CadastroActivity extends AppCompatActivity {
                 EditText txtEmail = (EditText) findViewById(R.id.txtEmail);
                 EditText txtSenha = (EditText) findViewById(R.id.txtSenha);
 
-                Ion.with(getBaseContext()).load("http://172.22.15.108/sgrh/WebService/inserir.php")
+                Ion.with(getBaseContext()).load("http://172.22.29.224/sgrh/WebService/inserir.php")
                         .setBodyParameter("nome", txtNome.getText().toString())
                         .setBodyParameter("cpf", txtCpf.getText().toString())
                         .setBodyParameter("emailCadastro", txtEmail.getText().toString())

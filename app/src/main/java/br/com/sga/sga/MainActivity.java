@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
 
-                    Ion.with(getBaseContext()).load("http://172.22.15.108/sgrh/WebService/login.php")
+                    Ion.with(getBaseContext()).load("http://172.22.29.224/sgrh/WebService/login.php")
                             .setBodyParameter("email", txtEmailLogin.getText().toString())
                             .setBodyParameter("senha", txtSenhaLogin.getText().toString())
                             .asJsonObject().setCallback(new FutureCallback<JsonObject>() {

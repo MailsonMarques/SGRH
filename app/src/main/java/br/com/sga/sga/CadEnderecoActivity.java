@@ -42,7 +42,7 @@ public class CadEnderecoActivity extends AppCompatActivity {
                     EditText txtCidade = (EditText) findViewById(R.id.txtCidade);
                     EditText txtTipo = (EditText) findViewById(R.id.txtTipo);
 
-                    Ion.with(getBaseContext()).load("http://172.22.15.108/sgrh/WebService/inserirEnd.php")
+                    Ion.with(getBaseContext()).load("http://172.22.29.224/sgrh/WebService/inserirEnd.php")
                             .setBodyParameter("idEnd", String.valueOf(codigo))
                             .setBodyParameter("enderecoCadastro", txtEndereco.getText().toString())
                             .setBodyParameter("enderecoNumero", txtNumero.getText().toString())
@@ -89,16 +89,6 @@ public class CadEnderecoActivity extends AppCompatActivity {
             return retorno;
         }
 
-        @Override
-        protected  void onPostExecute(String result){
-
-            if(result.equals("YES")){
-                Toast.makeText(getBaseContext(), "Cliente cadastrado com sucesso!", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getBaseContext(), MainActivity.class));
-            } else{
-                Toast.makeText(getBaseContext(), "Erro ao cadastrar o cliente!", Toast.LENGTH_SHORT).show();
-            }
-        }
     }
 
 }

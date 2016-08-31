@@ -58,7 +58,7 @@ public class ListEnderecoActivity extends AppCompatActivity {
             }
         };
 
-        Ion.with(getBaseContext()).load("http://172.22.15.108/sgrh/WebService/listar.php")
+        Ion.with(getBaseContext()).load("http://172.22.29.224/sgrh/WebService/listar.php")
                 .setBodyParameter("idEnd", String.valueOf(codigo))
                 .asJsonArray().setCallback(new FutureCallback<JsonArray>() {
             @Override

@@ -57,7 +57,7 @@ public class EditarCadastroActivity extends AppCompatActivity {
             }
         };
 
-        Ion.with(getBaseContext()).load("http://172.22.15.108/sgrh/WebService/listarEdit.php")
+        Ion.with(getBaseContext()).load("http://172.22.29.224/sgrh/WebService/listarEdit.php")
                 .setBodyParameter("idEnd", String.valueOf(codigo))
                 .asJsonArray().setCallback(new FutureCallback<JsonArray>() {
             @Override
@@ -93,6 +93,7 @@ public class EditarCadastroActivity extends AppCompatActivity {
 
 
                         startActivity(intent);
+                        finish();
                     }
                 });
             }
